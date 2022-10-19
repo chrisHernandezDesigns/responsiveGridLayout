@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.grid-container{
+    display: grid;
+    background-color: powderblue;
+    width: 90vw;
+    height: 80vh;
+    padding: 10px;
+}
+
+.grid-item{
+    background-color: #fff;
+    margin: 3px;
+}
+
+.item1{
+    /* 1st number is where to start on the grid 2nd number is how many to span across */
+    grid-column: 1/ span 2;
+    grid-row:  1 / span 3;
+    background-image: url('imgs/1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.item2{
+    grid-column: 3;
+    grid-row: 1;
+    background-image: url('imgs/2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.item3{
+    grid-column: 4;
+    grid-row: 1;
+    background-image: url('imgs/3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.item4{
+    grid-column: 3/ span 2;
+    grid-row: 2;
+    background-image: url('imgs/4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.item5{
+    grid-column: 3/ span 2;
+    grid-row: 3;
+    background-image: url('imgs/5.jpg');
+    background-position: center;
+    background-size: cover;
+}
